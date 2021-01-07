@@ -1,0 +1,152 @@
+                                                                                |DOCUMENTATION|
+
+
+Hello Mr Amal Joby. This is a short note for you on how to use my sample github softwares. You can open my .sh extension files in any text editor or code editor for further editing and research.
+
+Before you get started with this session, please make sure you have installed git in your PC (Linux is preferred) and have created a remote repo. If you haven't created a remote repo, THEN GO CREATE ONE NOW!!!!
+
+In this documentation, I will tell everything that you will need to know on how to use programmes that I have created in your PC. I will tell about these four topics:-
+
+ACTIVITY 1: SETTING UP LOCAL REPO AND CLONNING IT TO REMOTE REPO
+
+ACTIVITY 2: UPLOADING CODES IN REMOTE REPO
+
+ACTIVITY 3: DOWNLOADING CODES FROM REMOTE REPO
+
+ACTIVITY 4: CREATING DESKTOP SHORTCUTS
+
+|Lets start|
+
+The files with .sh extensions are actually terminal executable files. We can open these files in terminal and run the code inside it. Actually the .sh files I have given contain terminal codes so I believe you can understand what I mean!
+
+|ACTIVITY 1|
+
+SETTING UP LOCAL REPO AND CLONNING IT TO REMOTE REPO
+
+1.Open the file named Installer.sh in any code editor.
+
+Installer.sh is designed to make a local git repo and clone it with a remote repo. You will need this if you are planning to create a repo and share your codes with others.
+
+2.You will see this code:
+
+cd Desktop
+mkdir "Amal_Joby"
+cd "Amal_Joby"
+git config --global user.name "Your Name"
+git config --global user.email "Your e-mail"
+git init
+git remote add origin "Your remote repository url"
+
+Change the text written inside ""(appostrophies, I don't know the exact spelling!) according to your needs.
+
+I believe you will know this, but this is THE LAW!
+
+mkdir = Make a directory
+
+mkdir "Amal_Joby" = Make a directory named Amal Joby
+
+repo = repository
+
+git config --global user.name "Your Name" = This means you are adding a person to a specific git repo. So give any username you need.
+
+git config --global user.email "Your e-mail" = This means you are adding an email to that username. So give any email id you need.
+
+Whenever you upload or make a change in the repo, the user name and email written above will be showed for authentification purpouses. So choose your username and email wisely!!
+
+git remote add origin "Your remote repository url" = In this step, you are clonning your local repo with your Remote repo. You will need the remote repo link with you in this step. GO COPY AND PASTE THAT LINK!!
+
+3. After all these editing, save the file and open that file in terminal. Your local repo will be clonned with your remote repo!!
+
+If you'r code just open's in text editor, go and change the permission of the file. Right click on file>Properties>Permissions>Click on cheak box to execute the programme. Do this for other programmes also if you face difficulty in executing it in terminal.
+
+|ACTIVITY 2|
+
+UPLOADING CODES IN REMOTE REPO
+
+1. Open the file Code Updater.sh in any text editor.
+
+Code Updater.sh is designed to upload your code directly into your remote repo. Whenever you run this command, all the files saved in the local repo will be uploaded to your remote repo. YOU JUST SIT BACK AND ENJOY!!
+
+2. You will see this code there:
+
+cd Desktop
+cd "Amal_Joby"
+git add *
+git commit -m "File is added."
+git push --all origin
+
+3. Here, what you need to do is just change "Amal_Joby" to the name of your local repo (The folder name which you had given with mkdir!!!)
+
+4. Save the file without any change in name. Execute this file in terminal and all the codes saved in local repo will be uploaded into remote repo.
+
+|ACTIVITY 3|
+
+DOWNLOADING CODES FROM REMOTE REPO
+
+1. Open the file Code downloader.sh in any text editor.
+
+Code downloader.sh is designed to download all the new files uploaded in a specific remote repo. If anyone needs to download files uploaded in your repo, or you need to download files from others repo, you can use this.
+
+NB: You need to do git clone "Repo link" before using Code downloader.sh because what this programme does is to download recently added files in the repo to your PC. For getting the currently uploaded files, you will need git clone!!
+
+2. You will see this code there:
+
+cd Desktop
+cd "Amal_Joby"
+git pull "Repository URL"
+
+3. Change "Amal_Joby" with the folder name where you would like to download the latest files. If you have done git clone once, you can give the name of that folder.
+
+4. Change "Repository URL" to the URL of the target repo. I mean the repo from which you would like to download the files.
+
+5. Save this file and run in terminal. You will get the latest uploaded files from that repo in your system!
+
+|ACTIVITY 4|
+
+CREATING DESKTOP SHORTCUTS
+
+Creating desktop shortcuts will be very handy while you code. Just open the shortcut and it will do the rest. COOL RIGTH!!!
+
+1. Open the file name Shortcut Creator.sh in any code editor.
+
+Shortcut Creator.sh is designed for creating useful desktop shortcuts which makes daily tasks more easy and is time efficient. You can open, run a specific code, or even open an application using this programme!!
+
+2. You will see these code :
+
+[Desktop Entry]
+Name=Code Updater
+Exec=/home/josepaul/Code\\ updater.sh
+Comment=This programme updates code to Remote Repository
+Terminal=true
+Icon=/home/josepaul/git-logo.jpg
+Type=Application
+
+Copy and paste this code into a new file. Save this file with .desktop extension and the name in which you would like to see the shortcut with. Ex:-
+
+If you need a shortcut named Code updater in your desktop, save the above file in your desktop named Code updater.desktop
+ 
+3. Change the following according to your needs.
+
+Exec = Here, paste the path of the file, for which you are creating the shortcut. Ex:-
+
+If you need to create shortcut for Code updater, copy and paste its path location, which will look like this:-
+/home/amaljoby/dekstop/Amal_Joby/Code updater.sh
+
+Icon = Give the path location of any image file, which you would like to see as the icon of the shortcut. Ex:-
+
+If you need the icon of Git for your shortcut, then download the image from Google Chrome(That's what programmers use :0 ) and paste the path location of the image, which will look like this:-
+/home/amaljoby/downloads/git.png
+
+4. Save the file as said as before. Noww you will see the shortcut in your desktop IF YOU HAVE LUCK!!
+
+If it works, you will see the code running, without any error (Don't forget to howl and exclaim because that's what programmers do!)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+And that's it, you have done it. Congratulations in advance!. I believe we can work on future projects with this setup.
+
+Don't forget to make your own changes in this programme and learn new stuff. I believe this techniques will help you in creating .sh files and desktop shortcuts, so you can run files flawleslly.
+
+                                                                              !!ALL THE BEST COMRADE!!
+
+
